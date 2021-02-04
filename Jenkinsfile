@@ -1,10 +1,13 @@
 pipeline {
-    agent any
+    agent {
+      label "agent11-optimised"
+    }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'mvn compile'
             }
         }
         stage('Test') {
