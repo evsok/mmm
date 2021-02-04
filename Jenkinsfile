@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo "********************** Hostname:'
+                echo '********************** Hostname:'
                 sh 'hostname'
                 sh 'mvn compile'
             }
@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                echo "********************** Hostname:'
+                echo '********************** Hostname:'
                 sh 'hostname'                
                 sh 'mvn exec:java'
             }
