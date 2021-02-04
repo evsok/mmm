@@ -7,6 +7,16 @@ public class App {
 
   public static void main(String[] args) throws Exception {
     for (String name: args) {
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
+      System.out.println("******************************************************************");
       System.out.println("name: " + name);
       String jsonString = new App(name).getUserInfoJSON();
       JSONObject json = new JSONObject(jsonString);
